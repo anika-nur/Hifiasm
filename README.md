@@ -196,7 +196,7 @@ McGinty, S. P., Kaya, G., Sim, S. B., Makunin, A., Corpuz, R. L., Quail, M. A., 
 
 ## Acknowledgments
 
-This work was conducted at Colby College under the guidance of Dr. David R. Angelini.
+This work is being conducted at Colby College under the guidance of Dr. David R. Angelini.
 
 **Dr. David R. Angelini, Ph.D.**
 Professor and Associate Chair, Department of Biology
