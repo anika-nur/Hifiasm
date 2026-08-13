@@ -13,7 +13,6 @@ This repository contains scripts and documentation for reproducing the **de novo
  
 - [Background](#background)
 - [Datasets](#datasets)
-- [Repository Structure](#repository-structure)
 - [Dependencies](#dependencies)
 - [Pipeline Steps](#pipeline-steps)
 - [Results](#results)
@@ -35,29 +34,6 @@ All analyses were performed on the **NSCC HPC cluster** (SLURM scheduler).
 ## Datasets
 
 All sequencing data is from **BioProject [PRJEB83708](https://www.ebi.ac.uk/ena/browser/view/PRJEB83708)** (European Nucleotide Archive). Only the Medfly HiFi WGS reads and CiFi HindIII reads were used. 
-
-
-## Repository Structure
-
-```
-├── README.md                   
-├── scripts/
-│   ├── run_cifi2pe.py          # CiFi2PE paired-end conversion
-│   ├── 02_run_hifiasm.sh       # Hifiasm: HiFi-only + CiFi-phased assembly
-│   ├── process_cifi.sh         # GFA → FASTA conversion
-│   ├── assembly_stats.sh       # N50/L50/N90/L90 computation
-│   ├── run_busco.sh            # BUSCO quality assessment
-│   ├── run_yahs.sh             # YaHS scaffolding (BWA method)
-│   ├── run_yahs_hap1.sh        # YaHS for hap1 only (BWA)
-│   ├── run_yahs_hap2.sh        # YaHS for hap2 only (BWA)
-│   ├── hap1_stats.sh           # Scaffold stats for hap1
-│   ├── run_yahs_porec_full.sh  # Full paper method (Pore-C + filter_bam + YaHS)
-│   └── run_porec_mapping.sh    # Pore-C mapping only (for validation)
-└── docs/
-    └── project_status.md       # Detailed project status and notes
-```
-
-> **Note:** Raw sequencing data and large assembly outputs are not included in this repository due to file size.
 
 ---
 
