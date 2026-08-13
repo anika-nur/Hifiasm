@@ -88,7 +88,7 @@ All sequencing data is from **BioProject [PRJEB83708](https://www.ebi.ac.uk/ena/
 
 ### 1. CiFi2PE: Paired-End Conversion
 
-**Script:** `run_cifi2pe.py`
+**Script:** `CiFi2PE.py`
 
 A Python script that clones the CiFi2PE tool and processes the raw CiFi HindIII concatemer reads (`ERR14654081.fastq.gz`) into paired-end FASTQs. CiFi2PE digests each long read at HindIII restriction sites, then generates all pairwise combinations of the resulting fragments as synthetic R1/R2 read pairs. These pairs encode chromatin proximity information and are used downstream by hifiasm for contact-based phasing.
 
